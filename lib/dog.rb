@@ -8,7 +8,7 @@ class Dog
   def initialize(name)
     @name = name
     
-    define_method "save" do |self|
+    
       @@all << self
     end
     
