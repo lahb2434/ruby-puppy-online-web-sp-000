@@ -8,8 +8,8 @@ class Dog
   def initialize(name)
     @name = name
     
-    
-      @@all << self
+    define_method "self" do |new_dog|
+      @@all << new_dog
     end
     
   end
